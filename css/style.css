@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Tiny5", sans-serif;
+    --fonte3: "Teko", sans-serif;
+}
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    min-height: 100%vh;
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+}
+
+header{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--fonte2);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-left: 25px;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section > p{
+    padding: 1em;
+}
+
+section.normal{
+    color: black;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section.imagem{
+    color: rgb(0, 0, 0);
+    background-color: rgb(136, 135, 135);
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: var(--fonte2);
+    box-shadow: inset 9px 8px 14px 0px rgb(34, 34, 34);
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(53, 53, 53, 0.568);
+    border-radius: 10px;
+    text-shadow: 0.5px 0.2px white;
+}
+
+section#retro1{
+    background-image: url(../imagem/retro1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#retro2{
+    background-image: url(../imagem/retro2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+footer{
+    padding: 5.5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
